@@ -1,11 +1,7 @@
 import React from "react";
 
-function ImageCard({ image }) {
-  return (
-    <div>
-      <img src={image.src} alt={image.alt} />
-    </div>
-  );
+function ImageCard({ image: { previewURL, tags } }) {
+  return <img src={previewURL} alt={tags} />;
 }
 
 export default ImageCard;

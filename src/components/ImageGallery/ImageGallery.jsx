@@ -1,13 +1,13 @@
 import React from "react";
 import ImageCard from "../ImageCard/ImageCard";
 
-function ImageGallery({ images }) {
+function ImageGallery({ images = [] }) {
   return (
     <ul>
-      {images.map((el) => (
-        <li>
+      {images.map((image) => (
+        <li key={image.id}>
           <div>
-            <ImageCard image={el} />
+            <ImageCard image={image} />
           </div>
         </li>
       ))}
