@@ -1,14 +1,16 @@
 import React from "react";
+import css from "./LoadMoreBtn.module.css";
 
 function LoadMoreBtn({ onLoadMore }) {
   return (
     <button
+      className={css.button}
       type="button"
       onClick={() => {
-        onLoadMore;
+        () => onLoadMore;
       }}
     >
-      LoadMoreBtn
+      Load More
     </button>
   );
 }
