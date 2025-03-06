@@ -1,0 +1,30 @@
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  border-radius: 0.5rem;
+
+  min-width: 300px;
+  height: 250px;
+  overflow: hidden;
+  object-fit: cover;
+
+  background-color: white;
+
+  transition: 250ms ease-in-out;
+  transition-property: all;
+}
+
+.imageWrapper:hover {
+  scale: 1.075;
+  box-shadow: rgba(15, 12, 37, 0.3) 0px 4px 12px;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(50, 50, 50);
+}

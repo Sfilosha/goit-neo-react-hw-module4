@@ -1,0 +1,9 @@
+.close {
+  position: absolute;
+}
+
+.modalImage {
+  background: transparent;
+  max-height: 100%;
+  object-fit: contain;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 
 function ErrorMessage() {
-  return <p>Nothing found</p>;
+  return <p>Whoops, something went wrong! Please try reloading this page!</p>;
 }
 
 export default ErrorMessage;

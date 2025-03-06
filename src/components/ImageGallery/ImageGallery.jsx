@@ -1,19 +1,18 @@
 import React from "react";
 import css from "./ImageGallery.module.css";
 import ImageCard from "../ImageCard/ImageCard";
+import { forwardRef } from "react";
 
-function ImageGallery({ images = [] }) {
+const ImageGallery = forwardRef(({ images = [], onImageClick }, ref) => {
   return (
     <ul className={css.galleryList}>
       {images.map((image) => (
         <li key={image.id}>
-          <div className={css.imageWrapper}>
-            <ImageCard image={image} />
-          </div>
+          <ImageCard image={image} onClick={onImageClick} ref={ref} />
         </li>
       ))}
     </ul>
   );
-}
+});
 
 export default ImageGallery;
