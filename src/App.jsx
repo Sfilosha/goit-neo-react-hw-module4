@@ -46,7 +46,7 @@ function App() {
 
         // Робимо запит та рендеримо галерею
         const fetchResult = await fetchImagesUnsplash(query, page, perPage);
-        console.log(fetchResult);
+        // console.log(fetchResult);
         setImages((prevImg) => [...prevImg, ...fetchResult.results]);
 
         if (fetchResult.results.length === 0) {
