@@ -1,5 +1,6 @@
 import React from "react";
 import css from "./SearchBar.module.css";
+import toast, { Toaster } from "react-hot-toast";
 
 function SearchBar({ onSearch }) {
   const handleSubmit = (evt) => {
@@ -10,7 +11,7 @@ function SearchBar({ onSearch }) {
     // Якщо текстове поле порожнє, виводимо повідомлення
     // і припиняємо виконання функції.
     if (form.elements.query.value.trim() === "") {
-      alert("Please enter search term!");
+      toast.error("Please enter search term!");
       return;
     }
 
@@ -36,6 +37,9 @@ function SearchBar({ onSearch }) {
           Search
         </button>
       </form>
+      <div>
+        <Toaster position="bottom-center" />
+      </div>
     </header>
   );
 }

@@ -110,7 +110,7 @@ function App() {
       {images.length > 0 && (
         <ImageGallery
           images={images}
-          ref={refImage}
+          firstImageRef={refImage}
           onImageClick={handleImageClick}
         />
       )}

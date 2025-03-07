@@ -3,10 +3,6 @@ import { forwardRef } from "react";
 import css from "./ImageCard.module.css";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 
-// function ImageCard({ image: { previewURL, tags }, onClick }) {
-//   return <img src={previewURL} alt={tags} onClick={onClick} />;
-// }
-
 const ImageCard = forwardRef(
   ({ image: { urls, alt_description, likes }, onClick }, ref) => {
     return (
