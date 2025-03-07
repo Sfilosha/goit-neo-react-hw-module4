@@ -23,7 +23,7 @@ function App() {
   const [empty, setEmpty] = useState("");
   // const [totalPage, setTotalPages] = useState(0);
 
-  const perPage = 50;
+  const perPage = 20;
 
   const refImage = useRef();
 
